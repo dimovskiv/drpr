@@ -348,7 +348,7 @@ body, html {
     padding:1rem;
 
     h1,h2,h3,p {
-        color:gray !important;
+        color:white !important;
     }
 
     p {
@@ -591,7 +591,9 @@ body, html {
  .mastheadP {
     height:90%;
      padding:3rem;
-     background-image:url("bgbig.jpg")!important;
+     background-image:url("slott.jpg")!important;
+     background-position:center;
+     background-size:cover;
      background:none;
      background-repeat: repeat-y;
      display:flex;
@@ -605,7 +607,7 @@ body, html {
      p {
          font-size:30px;
          margin-top:10px;
-         color:gray;
+         color:white;
      }
 
    .btnn {
