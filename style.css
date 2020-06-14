@@ -229,7 +229,6 @@ body, html {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem;
-  padding-top: 0;
 }
 
 .terms a {
@@ -276,7 +275,7 @@ body, html {
 }
 
 .termsC {
-  padding-top: 5rem !important;
+  padding-top: 7rem !important;
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
           align-items: center !important;
