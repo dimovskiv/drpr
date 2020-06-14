@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Spielespace</title>
+    <title>Free to play sport games</title>
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light  ">
   
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -28,99 +28,103 @@
             </li>
            
             <li class="nav-item">
-              <a class="nav-link " href="https://play.google.com/store/apps/details?id=com.strategygame.gameofwarriors&hl=en">Get it on Play store</a>
+              <a class="nav-link " href="#games">Play games</a>
             </li>
           </ul>
          
         </div>
       </nav>
 
+ 
       <div class="masthead">
-          <div class="subtext">
-              <img src="logo.png" class="img-fluid">
-          </div>
+        
         <div class="subtext">
-            <h1>Free to play TD game</h1>
+           
+            <h1 class="text-center">On our website you can play the best free to play Sport games</h1>
         </div>
-        <div class="but animated bounce infinite">
-            <img src="play.png" class="img-fluid" onclick="location.href='https://play.google.com/store/apps/details?id=com.strategygame.gameofwarriors&hl=en';">
+        <div class="subtext mt-5">
+          <div class="form animeted bounce">
+
+     
+          <input id="name" placeholder="Name" class="form-control">
+                <input id="email" placeholder="Email" class="form-control mt-1">
+                <input id="subject" placeholder="Subject" class="form-control mt-1">
+                <textarea class="form-control mt-1" id="body" placeholder="Email Body"></textarea>
+                <input type="button" onclick="sendEmail()" value="Join us for more free games!" class="btnn  mt-4 ">
+              </div>
         </div>
+        <div class="but animated bounce infinite slow">
+            <img src="football.png" class="img-fluid" onclick="location.href='https://play.google.com/store/apps/details?id=com.strategygame.gameofwarriors&hl=en';">
+        </div>
+        <div class="but1 animated bounce infinite fast">
+          <img src="basketball.png" class="img-fluid" onclick="location.href='https://play.google.com/store/apps/details?id=com.strategygame.gameofwarriors&hl=en';">
+      </div>
+      <div class="but3 animated bounce infinite slower">
+        <img src="tennis.png" class="img-fluid" onclick="location.href='https://play.google.com/store/apps/details?id=com.strategygame.gameofwarriors&hl=en';">
+    </div>
       </div>
 
+      <div class="game g1">
+        <div class="item" data-aos="fade-up">
+            <div class="subItem">
+                <img src="money.png" class="img-fluid mt-5">
+            </div>
+            <div class="subItem">
+               <p>No money needed</p>
+            </div>
+        </div>
+        <div class="item mt-5" data-aos="fade-up">
+           <div class="subItem">
+               <img src="11.png" class="img-fluid">
+           </div>
+           <div class="subItem ">
+               <p>All games are free to play</p>
+           </div>
+       </div>
+       <div class="item mt-5" data-aos="fade-up">
+           <div class="subItem">
+               <img src="22.png" class="img-fluid">
+           </div>
+           <div class="subItem" >
+               <p class="text-center">You can find the best free games on our website</p>
+           </div>
+       </div>
+    </div>
       
 
       <div class="aboutUs" id="aboutUs">
         <div class="item" data-aos="fade-up">
            
-            <h1 class="text-center mb-4">Game of Warriors is a Strategy Free to Play TD (Tower Defense) game with a unique style in its genre. Set in a magical world you will have to upgrade your defenses and mighty soldiers to survive and siege enemy territories to conquer them.<span id="dots">..</span><span id="more"> The age of dark empires have come to an end, it's time to recover what rightfully belongs to us, it's time for revolt, war and revenge! 
-                Command your gladiators into a battle for eternal glory in this epic clash of warriors.</span></h1> 
-                <button onclick="myFunction()" id="myBtn">more</button>
+            <h1 class="text-center mb-4">Sports games let you be the athlete using just your mouse and keyboard. They're a great way to kill time while playing your favorite sports in some of the craziest ways ever. Run, kick, jump and score your way to fame! From classics like football and soccer to action-packed ones, like skateboarding; our sports games let your fingers win the game! </span></h1> 
+          
         </div>
-        <div class="item ii1" data-aos="fade-up">
-            <img src="game1.png" class="img-fluid mt-4">
-        </div>
-        <div class="item ii2" data-aos="fade-up">
-            <img src="game2.png" class="img-fluid mt-4 mb-4">
-        </div>  
      </div>
 
-     <div class="header text-center">
-         <h1>Game of Warriors is a Strategy TD (Tower Defense) game with a unique style in its genre. Set in a magical world you will have to upgrade your defenses and mighty soldiers to survive and siege enemy territories to conquer them.<span id="dots">..</span><span id="more"> The age of dark empires have come to an end, it's time to recover what rightfully belongs to us, it's time for revolt, war and revenge! 
-            Command your gladiators into a battle for eternal glory in this epic clash of warriors.</h1>
-     </div>
-     <div class="aboutUsDesk"  id="aboutUs">
-         
-        <div class="item ii1" data-aos="fade-up">
-            <img src="game1.png" class="img-fluid ">
-        </div>
-        <div class="item ii2 text-center" data-aos="fade-up">
-            <div class="text">
-  <h1>Game of Warriors is a Strategy TD (Tower Defense) game with a unique style in its genre. Set in a magical world you will have to upgrade your defenses and mighty soldiers to survive and siege enemy territories to conquer them.<span id="dots">..</span><span id="more"> The age of dark empires have come to an end, it's time to recover what rightfully belongs to us, it's time for revolt, war and revenge! 
-            Command your gladiators into a battle for eternal glory in this epic clash of warriors.</h1>
-        </div> 
-            </div>
-         
-        <div class="item ii2 m4" data-aos="fade-up">
-            <div class="text mt-5">
-                <h1>Game of Warriors is a Strategy TD (Tower Defense) game with a unique style in its genre. Set in a magical world you will have to upgrade your defenses and mighty soldiers to survive and siege enemy territories to conquer them.<span id="dots">..</span><span id="more"> The age of dark empires have come to an end, it's time to recover what rightfully belongs to us, it's time for revolt, war and revenge! 
-                          Command your gladiators into a battle for eternal glory in this epic clash of warriors.</h1>
-                      </div> 
-        </div>
-        <div class="item ii2" data-aos="fade-up">
-            <img src="game4.png" class="img-fluid">
-        </div> 
+     <div class="framegames">
+       <div class="item">
+        <iframe id="netentgame" src="https://www.gameflare.com/embed/mini-tennis-3d/" frameborder="0" allowfullscreen ></iframe>
+       </div>
+       <div class="item">
+        <iframe id="netentgame" src="https://www.gameflare.com/embed/basketball-io/" frameborder="0" scrolling="no"  allowfullscreen></iframe>
+      </div>
+      <div class="item">
+        <iframe id="netentgame" src="https://www.gameflare.com/embed/football-world-cup-2019/"  allowfullscreen></iframe>
+      </div>
+      <div class="item">
+                   
+ 
+  <iframe id="netentgame" src="https://www.gameflare.com/embed/street-freekick-3d/" frameborder="0" scrolling="no"  allowfullscreen></iframe>
+      </div>
+      
+    
+    
+
+
+
      </div>
 
-     <div class="hr">
-         <hr>
-     </div>
-
-     <div class="game">
-         <div class="item" data-aos="fade-up">
-             <div class="subItem">
-                 <img src="3.png" class="img-fluid mb-4">
-             </div>
-             <div class="subItem">
-                <p>4 Heroes to unlock</p>
-             </div>
-         </div>
-         <div class="item mt-5" data-aos="fade-up">
-            <div class="subItem">
-                <img src="1.png" class="img-fluid mb-4">
-            </div>
-            <div class="subItem ">
-                <p>100 territories to conquer</p>
-            </div>
-        </div>
-        <div class="item mt-5" data-aos="fade-up">
-            <div class="subItem">
-                <img src="2.png" class="img-fluid mb-4">
-            </div>
-            <div class="subItem" >
-                <p>30 soldiers to upgrade</p>
-            </div>
-        </div>
-     </div>
+    
+    
 
      <div class="hr">
         <hr>
@@ -144,7 +148,7 @@
     <div class="footer text-center">
         <div class="item">
             <p>The Strategicgames are intended for an adult audience only.
-                “Grow Empire: Rome” is a rousing game that mixes the elements of “Tower Defense” games (TD) with those of strategy and role-playing games (RPG).
+               
                 All games are free to play and no money is ever needed play.</p>
         </div>
         <div class="item">

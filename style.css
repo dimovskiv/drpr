@@ -18,16 +18,16 @@ body, html {
 .navbar {
   position: fixed;
   width: 100%;
-  background-color: rgba(34, 34, 34, 0.9) !important;
+  background-color: whitesmoke !important;
   z-index: 99;
 }
 
 .navbar a {
-  color: white !important;
+  color: black !important;
 }
 
 .navbar .navbar-toggler-icon {
-  color: white !important;
+  color: black !important;
 }
 
 .masthead {
@@ -50,7 +50,8 @@ body, html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 3rem;
+  padding-top: 5rem !important;
+  padding: 1rem;
 }
 
 .masthead .img-fluid {
@@ -58,18 +59,90 @@ body, html {
   width: 400px;
 }
 
-.masthead .subtext .img-fluid {
-  height: 200px;
+.masthead .subtext {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.masthead .subtext h1 {
+.masthead .subtext .img-fluid {
+  height: 100px;
+  width: 100px;
+}
+
+.masthead .subtext .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.masthead .subtext .form .btnn {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 5%;
   color: white;
+  background-color: #eeeb5a;
+  color: gray;
+  opacity: 0.9;
+}
+
+.masthead .subtext h1, .masthead .subtext h2 {
+  color: gray;
   opacity: 0.8;
 }
 
 .masthead .but {
   position: absolute;
   bottom: 0;
+  padding: 15px;
+}
+
+.masthead .but .img-fluid {
+  height: 100px;
+  width: 100px;
+}
+
+.masthead .but1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+}
+
+.masthead .but1 .img-fluid {
+  height: 100px;
+  width: 100px;
+}
+
+.masthead .but3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.masthead .but3 .img-fluid {
+  height: 100px;
+  width: 100px;
 }
 
 .aboutUs {
@@ -121,7 +194,6 @@ body, html {
 }
 
 .game {
-  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,15 +230,42 @@ body, html {
   height: 100px;
 }
 
+.game .item .subItem {
+  margin-top: 50px !important;
+}
+
 .game .subItem p {
   font-size: 22px;
+}
+
+.framegames {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5px;
+}
+
+.framegames .item {
+  width: 100%;
+  margin: 2px;
+}
+
+.framegames .item .img-flui {
+  width: 100%;
 }
 
 .cookies {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #222222;
+  background-color: whitesmoke;
   height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,7 +299,7 @@ body, html {
 }
 
 .cookies p {
-  color: white;
+  color: gray;
   opacity: 0.8;
 }
 
@@ -208,9 +307,9 @@ body, html {
   color: #222222;
   padding: 10px;
   width: 150px;
-  border: 1px solid white;
+  border: 1px solid gray;
   background: transparent;
-  color: white;
+  color: gray;
   opacity: 0.8;
 }
 
@@ -342,6 +441,10 @@ body, html {
   padding: 1rem;
 }
 
+.mastheadP h1, .mastheadP h2, .mastheadP h3, .mastheadP p {
+  color: gray !important;
+}
+
 .mastheadP p {
   text-align: center;
   opacity: 0.8;
@@ -351,13 +454,6 @@ body, html {
 .mastheadP h3 {
   color: #ffd25a;
   opacity: 0.8;
-}
-
-.mastheadP .btnn {
-  background-color: #2962bf;
-  padding: 10px;
-  border: none;
-  border-radius: 20px;
 }
 
 .mastheadP .subtext {
@@ -399,11 +495,7 @@ body, html {
 
 #netentgame {
   width: 100% !important;
-  height: 400px !important;
-}
-
-.game {
-  padding: 0px !important;
+  height: 700px !important;
 }
 
 .other {
@@ -420,7 +512,7 @@ body, html {
 }
 
 .other a {
-  background-color: #2962bf;
+  background-color: #eeeb5a;
   color: white !important;
   padding: 10px;
   border-radius: 50px;
@@ -450,10 +542,32 @@ body, html {
     margin: 15px;
   }
   .masthead {
-    background-image: url("bgbig.png");
+    background-image: url("bgbig.jpg");
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .masthead .subtext {
+    width: 50%;
+  }
+  .masthead .subtext h1 {
+    width: 80%;
+  }
+  .masthead .subtext .form {
+    width: 80%;
+  }
+  .masthead .but {
     display: none;
+  }
+  .g1 {
+    height: 80%;
   }
   .aboutUS {
     display: none !important;
@@ -467,6 +581,12 @@ body, html {
   }
   .game .item {
     width: 33.3%;
+  }
+  .framegames {
+    padding: 1rem;
+  }
+  .framegames .item {
+    margin-top: 2rem !important;
   }
   .aboutUsDesk {
     display: -webkit-box !important;
@@ -523,9 +643,6 @@ body, html {
   .termsC p {
     line-height: 2;
   }
-  .gD {
-    height: 80%;
-  }
   .gD #netentgame {
     width: 100% !important;
     height: 100% !important;
@@ -541,7 +658,7 @@ body, html {
   .mastheadP {
     height: 90%;
     padding: 3rem;
-    background-color: #2962bf !important;
+    background-color: #eeeb5a !important;
     background: none;
     background-repeat: repeat-y;
     display: -webkit-box;
@@ -558,7 +675,7 @@ body, html {
   .mastheadP p {
     font-size: 30px;
     margin-top: 10px;
-    color: white;
+    color: gray;
   }
   .mastheadP .subtext {
     width: 100%;
@@ -586,11 +703,11 @@ body, html {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .mastheadP .subtext .btnn {
-    background-color: #ffd25a;
+  .mastheadP .subtext h2 {
+    color: gray !important;
   }
   .navbar {
-    background-color: rgba(34, 34, 34, 0.8) !important;
+    background-color: whitesmoke !important;
     z-index: 99;
   }
   .navbar .nav-item {
@@ -600,22 +717,19 @@ body, html {
   }
   .navbar .nav-item a {
     font-size: 30px;
-    color: white !important;
+    color: black important;
     opacity: 0.6;
+  }
+  .nav-item a {
+    color: black !important;
   }
 }
 
-.aboutUS {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.g1 {
+  padding-top: 3rem;
 }
 
-.aboutUsDesk {
-  display: none;
-}
-
-.header {
-  display: none;
+input, textarea {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
