@@ -72,17 +72,10 @@ body, html {
             align-items: center;
             width:90%;
 
-            .btnn {
-                width:100%;
-                padding:10px;
-                border:0;
-                border-radius:5%;
-                color:white;
-                background-color:#eeeb5a;
-                color:gray;
-                opacity:0.9;
-            }
+       
         }
+
+       
 
         h1, h2 {
             color:	gray;
@@ -420,11 +413,24 @@ body, html {
     }
 }
 
+.btnn {
+    width:100%;
+    padding:10px;
+    color:white;
+    background-color:#eeeb5a;
+    border:none;
+    border-radius:5%;
+}
+
 @media only screen and (min-width: 992px) {
     
     .slots {
         padding-top:4rem;
+    
+        
         .item {
+            width:25%;
+            opacity:0.7;
             .img-fluid {
                 width:98%;
                 height:600px;
@@ -585,11 +591,11 @@ body, html {
  .mastheadP {
     height:90%;
      padding:3rem;
-     background-color:#eeeb5a !important;
+     background-image:url("bgbig.jpg")!important;
      background:none;
      background-repeat: repeat-y;
      display:flex;
-     flex-direction:column;
+     flex-direction:row;
      
   
      h3 {
@@ -602,7 +608,14 @@ body, html {
          color:gray;
      }
 
-   
+   .btnn {
+       width:100%;
+       padding:10px;
+       color:white;
+       background-color:#eeeb5a;
+       border:none;
+       border-radius:5%;
+   }
 
      .subtext {
          width:100%;

@@ -94,17 +94,6 @@ body, html {
   width: 90%;
 }
 
-.masthead .subtext .form .btnn {
-  width: 100%;
-  padding: 10px;
-  border: 0;
-  border-radius: 5%;
-  color: white;
-  background-color: #eeeb5a;
-  color: gray;
-  opacity: 0.9;
-}
-
 .masthead .subtext h1, .masthead .subtext h2 {
   color: gray;
   opacity: 0.8;
@@ -518,9 +507,22 @@ body, html {
   border-radius: 50px;
 }
 
+.btnn {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: #eeeb5a;
+  border: none;
+  border-radius: 5%;
+}
+
 @media only screen and (min-width: 992px) {
   .slots {
     padding-top: 4rem;
+  }
+  .slots .item {
+    width: 25%;
+    opacity: 0.7;
   }
   .slots .item .img-fluid {
     width: 98%;
@@ -658,16 +660,16 @@ body, html {
   .mastheadP {
     height: 90%;
     padding: 3rem;
-    background-color: #eeeb5a !important;
+    background-image: url("bgbig.jpg") !important;
     background: none;
     background-repeat: repeat-y;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .mastheadP h3 {
     font-size: 50px;
@@ -676,6 +678,14 @@ body, html {
     font-size: 30px;
     margin-top: 10px;
     color: gray;
+  }
+  .mastheadP .btnn {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #eeeb5a;
+    border: none;
+    border-radius: 5%;
   }
   .mastheadP .subtext {
     width: 100%;
